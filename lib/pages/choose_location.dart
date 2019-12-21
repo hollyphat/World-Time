@@ -7,8 +7,8 @@ class ChooseLocation extends StatefulWidget {
 
 class _ChooseLocationState extends State<ChooseLocation> {
 
-  void getData(){
-    Future.delayed(Duration(seconds: 3), (){
+  void getData() async{
+    await Future.delayed(Duration(seconds: 3), (){
       print("Holly");
     });
 
@@ -35,7 +35,7 @@ class _ChooseLocationState extends State<ChooseLocation> {
         centerTitle: true,
         elevation: 0.0,
       ),
-      body: Text("Choose location screen"),
+      //body: Text("Choose location screen"),
     );
   }
 }
