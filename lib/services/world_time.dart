@@ -10,7 +10,7 @@ class WorldTime{
 
   WorldTime({this.location, this.flag, this.url});
 
-  void getTime() async{
+  Future<void> getTime() async{
     //make the request
     Response response = await get("http://worldtimeapi.org/api/timezone/$url");
 
