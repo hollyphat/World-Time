@@ -6,6 +6,15 @@ class Loading extends StatefulWidget {
 }
 
 class _LoadingState extends State<Loading> {
+  void getData() async{
+
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getData();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
