@@ -33,7 +33,7 @@ class WorldTime{
       DateTime now = DateTime.parse(datetime);
       now = now.add(Duration(hours: int.parse(offset)));
 
-      time = now.toString(); //Set the time property
+      time = DateFormat.jm().format(now); //Set the time property
     }catch(e){
       print ("Caught error $e");
       time = "could not get time data";
