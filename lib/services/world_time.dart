@@ -14,7 +14,7 @@ class WorldTime{
     //make the request
     try {
       Response response = await get(
-          "http://worldtimeapi.org/api/timezones/$url");
+          "http://worldtimeapi.org/api/timezone/$url");
 
       Map data = jsonDecode(response.body);
 
@@ -34,7 +34,8 @@ class WorldTime{
 
       time = now.toString(); //Set the time property
     }catch(e){
-
+      print ("Caught error $e");
+      time = "could not get time data";
     }
   }
 }
