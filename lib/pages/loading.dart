@@ -33,7 +33,7 @@ class _LoadingState extends State<Loading> {
     return Scaffold(
       backgroundColor: Colors.blue[900],
       body: Center(
-        child: SpinKitRotatingCircle(
+        child: SpinKitFadingCube(
           color: Colors.white,
           size: 80.0,
         ),
